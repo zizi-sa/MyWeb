@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../scr/wishes.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #131313, #1a1717,  #73d6c7);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .x {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            opacity: 0.5;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #060606;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #131313, #a10e0e, #de1d0f);
+        }
+
+        .footer__container{
+            background: linear-gradient(to right, #131313, #1a1717,  #73d6c7);
+             padding: 5rem 0;
+             display: flex;
+              flex-direction: column;
+               justify-content: center;
+               align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <i class="fas fa-gem"></i>  Trendig #TikTok_Recipes </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="../www/wishes.html" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="../www/tech.html" class="navbar__links"> Tech </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links"> Support </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="../www/SingIn.html" class="button"> Sing in </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="x">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" value="Enter your full name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" value="Enter your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" value="Enter subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your Message here"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>About Us</h2>
+                 <a href="/">How it works</a>
+                 <a href="/">Inveestments</a>
+                 <a href="../www/ContactUs.html">Contact Us</a>
+                 <a href="/">Report</a>
+                 <a href="/">Terms of Service</a>
+             </div>
+             <div class="footer__link--items">
+                 <h2>Social Media</h2>
+                 <a href="/">Instgram</a>
+                 <a href="/">Snapchat</a>
+                 <a href="/">X</a>
+                 <a href="/">WhatsApp</a>
+                 <a href="/">Feacbook</a>
+             </div>
+         </div>
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>Information</h2>
+                 <a href="/">About Wishes</a>
+                 <a href="/">Leave a Message</a>
+                 <a href="../www/aboutUs.html">About Us</a>
+                 <a href="/">Jobs</a>
+                 <a href="/">Privacy Policy</a>
+             </div>
+         </div>
+        </div>
+        <div class="social__media">
+         <div class="social__media--wrap">
+             <div class="footer__logo">
+                 <a href="/" id="footer__logo"><i class="fas fa-gem"></i>#TikTok_Trendig</a>
+             </div>
+             <p class="wepsite__rights">© #Trendig TikTok_Recipes 2024. All right reserved</p>
+             <div class="social__icons">
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-facebook"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-instgram"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-snapchat"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-X"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-whatsApp"></i>
+                 </a>
+             </div>
+         </div>
+        </div>
+       </div>
+ 
+
+</body>
+
+</html>

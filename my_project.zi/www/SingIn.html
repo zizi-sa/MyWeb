@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../scr/wishes.css"/>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #131313, #1a1717,  #73d6c7);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .navbar {
+            background-color:  #131313;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #73d6c7, #1a1717,  #131313);
+        }
+
+        .navbar_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;  
+        }
+
+        #navbar_logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .navbar_toggle {
+            display: none; 
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar_toggle .bar {
+            height: 3px;
+            width: 25px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        .navbar_menu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .navbar_item {
+            margin: 0 15px;
+        }
+
+        .navbar_links, .button {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar_btn .button {
+            padding: 10px 15px;
+            background-color: black;
+            border-radius: 4px;
+        }
+
+        .navbar_btn, .button:hover {
+            background: linear-gradient(to right, #131313, #1a1717,  #73d6c7);
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .navbar__menu {
+            max-width: 600px;
+            margin: auto;
+            background: #131313;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            background: linear-gradient(to right, #73d6c7, #1a1717,  #131313);
+        }
+
+        .main_img--container {
+            display: flex;
+            justify-content: center; 
+            margin: 20px 0; 
+        }
+
+        #main__img {
+            height: 40%;
+            width: 40%;
+        }
+
+        .label-input {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .label-input label {
+            width: 150px;
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .navbar__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .navbar__btn a {
+            padding: 10px;
+            background-color:black;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar__btn:hover a {
+            background: linear-gradient(to right, #131313, #a10e0e, #de1d0f);
+            transition: all;
+        }
+
+        .footer__container{
+            background: linear-gradient(to right, #131313, #1a1717,  #73d6c7);
+             padding: 5rem 0;
+             display: flex;
+              flex-direction: column;
+               justify-content: center;
+               align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="../www/wishes.html" class="navbar_links"> Home </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="../www/tech.html" class="navbar_links"> Tech </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links"> Support </a>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="navbar__menu">
+        <h1>Sign in</h1>
+        <form>
+            <div class="main_img--container">
+                <img src="../scr/pic9.svg" alt="pic" id="main__img">
+            </div>
+
+            <!-- <label for="option">As What You Would Like To Sing In:</label><br>
+            <input type="radio" name="option" value="wisher" checked> Wisher <br>
+            <p>Drems Can Be True✨</p>
+            <input type="radio" name="option" value="provider"> Provider <br>
+            <p>Take The Lead To Help Others</p> -->
+
+            <div class="label-input">
+                <label for="name">Your First Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="label-input">
+                <label for="middle-name">Your Middle Name:</label>
+                <input type="text" id="middle-name" name="middle-name" required>
+            </div>
+            <div class="label-input">
+                <label for="last-name">Your Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="label-input">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="label-input">
+                <form id="passwordForm" omsubmit="return validatePasswords()">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <span id="erroe" class="erroe"></span>
+            </div>
+        </form>
+            <div class="label-input">
+                <label for="gender">Choose Gender:</label>
+                <div>
+                    <input type="radio" name="gender" value="female" checked required> Female <br>
+                    <input type="radio" name="gender" value="male" required> Male
+                </div>
+            </div>
+
+            <div class="navbar__btn">
+                <a href="/www/HomeSinged.html" class="button"> Sign In </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>About Us</h2>
+                 <a href="/">How it works</a>
+                 <a href="/">Inveestments</a>
+                 <a href="../www/ContactUs.html">Contact Us</a>
+                 <a href="/">Report</a>
+                 <a href="/">Terms of Service</a>
+             </div>
+             <div class="footer__link--items">
+                 <h2>Social Media</h2>
+                 <a href="/">Instgram</a>
+                 <a href="/">Snapchat</a>
+                 <a href="/">X</a>
+                 <a href="/">WhatsApp</a>
+                 <a href="/">Feacbook</a>
+             </div>
+         </div>
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>Information</h2>
+                 <a href="/">About Wishes</a>
+                 <a href="/">Leave a Message</a>
+                 <a href="../www/aboutUs.html">About Us</a>
+                 <a href="/">Jobs</a>
+                 <a href="/">Privacy Policy</a>
+             </div>
+         </div>
+        </div>
+        <div class="social__media">
+         <div class="social__media--wrap">
+             <div class="footer__logo">
+                 <a href="/" id="footer__logo"><i class="fas fa-gem"></i>#TikTok_Trendig</a>
+             </div>
+             <p class="wepsite__rights">© #Trendig TikTok_Recipes 2024. All right reserved</p>
+             <div class="social__icons">
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-facebook"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-instgram"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-snapchat"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-X"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                     <i class="fab fa-whatsApp"></i>
+                 </a>
+             </div>
+         </div>
+        </div>
+       </div>
+ 
+       <script src="/scr/app.js"></script>
+</body>
+</html>
